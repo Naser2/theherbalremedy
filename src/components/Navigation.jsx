@@ -443,7 +443,7 @@ export default function Navigation({ pageContent, featured }) {
                             className="my-5 border-t border-gray-200"
                             aria-hidden="true"
                           />
-                          <div className="-mt-1 space-y-1 bg-gray-50 px-2">
+                          <div className="-mt-4 space-y-1 bg-gray-50 px-2 ">
                             {secondaryNavigation.map((item) => (
                               <a
                                 key={item.name}
@@ -501,7 +501,7 @@ export default function Navigation({ pageContent, featured }) {
                         viewBox="0 0 10 9"
                         fill="none"
                         stroke-linecap="round"
-                        stroke="troke-white"
+                        stroke="stroke-white"
                         aria-hidden="true"
                         class="w-.5 stroke-white"
                       >
