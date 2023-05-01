@@ -468,7 +468,7 @@ export default function Navigation({ pageContent, featured }) {
                                 className="relative h-full w-full "
                                 alt="theherbalRemedy image"
                                 width={200}
-                                height={150}
+                                height={140}
                               />
                             </div>
                           </div>{' '}
@@ -501,6 +501,7 @@ export default function Navigation({ pageContent, featured }) {
                           viewBox="0 0 10 9"
                           fill="none"
                           stroke-linecap="round"
+                          stroke="troke-white"
                           aria-hidden="true"
                           class="w-.5 stroke-white"
                         >
