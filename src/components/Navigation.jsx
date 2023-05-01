@@ -393,7 +393,7 @@ export default function Navigation({ pageContent, featured }) {
                         <div className="absolute top-0 right-0">
                           <button
                             type="button"
-                            className="z-50   flex h-10 w-10 items-center justify-center rounded-full bg-teal-400 text-black shadow-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-400  "
+                            className="z-50 flex h-10 w-10 items-center justify-center rounded-full bg-teal-400  shadow-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500  "
                             onClick={() => setSidebarOpen(false)}
                           >
                             <span className="sr-only">Close sidebar</span>
@@ -405,7 +405,7 @@ export default function Navigation({ pageContent, featured }) {
                         </div>
                       </Transition.Child>
                       <div className="h-0 flex-1 overflow-y-auto pt-0 pb-4">
-                        <div className="flex flex-shrink-0 items-center bg-teal-400 px-4 py-2">
+                        <div className="flex flex-shrink-0 items-center bg-teal-400 px-4 py-2 text-white">
                           <span className="sm:text-lg">Menu</span>
                         </div>
                         <nav aria-label="Sidebar" className="mt-1">
@@ -440,7 +440,7 @@ export default function Navigation({ pageContent, featured }) {
                             className="my-5 border-t border-gray-200"
                             aria-hidden="true"
                           />
-                          <div className="-mt-3 space-y-1 bg-teal-100 px-2">
+                          <div className="-mt-3 space-y-1 bg-gray-50 px-2">
                             {secondaryNavigation.map((item) => (
                               <a
                                 key={item.name}
@@ -492,7 +492,7 @@ export default function Navigation({ pageContent, featured }) {
                     <div>
                       <button
                         type="button"
-                        className=" inline-flex h-4 w-4  items-center justify-center rounded-md text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-pink-600"
+                        className=" inline-flex h-4 w-4  items-center justify-center rounded-md text-white hover:text-teal-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-600"
                         onClick={() => setSidebarOpen(true)}
                       >
                         <span className="sr-only">Open sidebar</span>
@@ -501,7 +501,7 @@ export default function Navigation({ pageContent, featured }) {
                           fill="none"
                           stroke-linecap="round"
                           aria-hidden="true"
-                          class="w-.5 stroke-zinc-900 dark:stroke-slate-900"
+                          class="w-.5 stroke-white"
                         >
                           <path d="M.5 1h9M.5 8h9M.5 4.5h9"></path>
                         </svg>
@@ -557,7 +557,7 @@ const DesktopNavigation = () => {
                       tab.current
                         ? 'border-b-4 border-t-4 border-b-yellow-400 border-t-yellow-400  bg-teal-200  text-3xl text-teal-600  text-gray-900 '
                         : 'border-transparent text-white  hover:border-gray-300 hover:text-gray-700',
-                      'whitespace-nowrap border-b-2 py-4  px-4 px-6  text-2xl text-sm font-medium  text-white hover:text-teal-600 '
+                      'whitespace-nowrap border-b-2 py-4  px-4 px-6  text-2xl text-sm font-medium  text-white hover:text-teal-100 '
                     )}
                     aria-current={tab.current ? 'page' : undefined}
                   >

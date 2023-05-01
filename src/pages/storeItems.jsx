@@ -263,29 +263,57 @@ export const EdibleItems = ({ number }) => {
         <h1 className="text-3xl font-bold tracking-tight text-gray-900">
           Our Infused Menu
         </h1>
-        {router.pathname == '/' && (
-          <h2 class="font-medium text-gray-500 lg:text-2xl">
-            Heerbal based edibles{' '}
-          </h2>
-        )}
         {router.pathname == '/herbs' && (
-          <h2 class="font-medium text-gray-500">
-            All herbal based edibles{' '}
-            {router.pathname == '/' && (
-              <Link
-                href="/herbs"
-                className="text-4xl text-slate-500  hover:text-slate-600"
-              >
-                TEAS
-              </Link>
-            )}
-          </h2>
+          <h2 class="font-medium text-gray-500">All herbal based edibles</h2>
+        )}
+        {router.pathname == '/' && (
+          <div className="flex inline-flex ">
+            <p className="mt-2 flex shrink-0 text-lg text-gray-500 lg:text-xl">
+              Edible items.
+            </p>{' '}
+            <Link
+              href="/edibles"
+              className=" opacity-1 z-30 mt-1 flex max-h-[34px] w-full items-center  justify-center rounded-xl px-1.5 py-1 text-sm text-sm text-xl font-medium  text-teal-600 shadow-sm hover:bg-teal-600 hover:text-teal-100 focus:underline  focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-full sm:flex-grow-0 lg:max-h-[44px]"
+            >
+              Herbal Remedy Teashopl
+            </Link>
+          </div>
         )}
       </div>
 
       <div className="mt-12 space-y-16 sm:mt-16 ">
         {/* {edibles.map((order) => (key={order.number} aria-labelledby={`${order.number}-heading`} */}
         <section>
+          {/* <div className="space-y-1 md:flex md:items-baseline md:space-x-4 md:space-y-0">
+              <h2
+                id={`${order.number}-heading`}
+                className="text-lg font-medium text-gray-900 md:flex-shrink-0"
+              >
+                Order #{order.number}
+              </h2>
+              <div className="space-y-5 sm:flex sm:items-baseline sm:justify-between sm:space-y-0 md:min-w-0 md:flex-1">
+                <p className="text-sm font-medium text-gray-500">
+                  {order.status}
+                </p>
+                <div className="flex text-sm font-medium">
+                  <a
+                    href={order.href}
+                    className="text-indigo-600 hover:text-indigo-500"
+                  >
+                    Manage order
+                  </a>
+                  <div className="ml-4 border-l border-gray-200 pl-4 sm:ml-6 sm:pl-6">
+                    <a
+                      href={order.invoiceHref}
+                      className="text-indigo-600 hover:text-indigo-500"
+                    >
+                      View Invoice
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div> */}
+
           <div className="border-gray-20 -mb-6 mt-6 flow-root divide-y divide-gray-200 border-t md:grid md:grid-cols-2 ">
             {edibles.slice(0, number).map((product) => (
               <div key={product.id} className="py-6 sm:flex">
@@ -293,7 +321,7 @@ export const EdibleItems = ({ number }) => {
                   <img
                     src={product.item.imageSrc.src}
                     alt={product.item.imageAlt}
-                    className="h-20 w-20 flex-none rounded-md border border-2 border-sky-100 object-cover object-center sm:h-48 sm:w-48 lg:h-64 lg:w-64"
+                    className="h-20 w-20 flex-none rounded-md border border-2 border-sky-500 object-cover object-center sm:h-48 sm:w-48"
                   />
                   <div className="min-w-0 flex-1 pt-1.5 sm:pt-0">
                     <h3 className="text-lg font-medium text-gray-900 md:text-xl">
@@ -314,23 +342,6 @@ export const EdibleItems = ({ number }) => {
               </div>
             ))}
           </div>
-
-          {router.pathname == '/' && (
-            <div className="z-50 order-first mt-4   flex space-x-2  text-sm font-semibold lg:mt-6 lg:justify-center ">
-              <nav
-                aria-label="Breadcrumbs"
-                className="z-50 order-first  mt-4 flex justify-center space-x-2 text-sm font-semibold lg:mt-24 "
-              >
-                <Link
-                  href="/herbs"
-                  className="rounded-md bg-teal-500 py-2  px-4 text-xl text-sm font-medium text-white  md:block lg:text-4xl "
-                >
-                  View more edibles
-                  <span aria-hidden="true"> →</span>
-                </Link>
-              </nav>
-            </div>
-          )}
         </section>
         {/* ))} */}
       </div>
@@ -382,23 +393,20 @@ export const HearbItems = ({ number }) => {
                 </div>
               </div>
             ))}
-          </div>{' '}
-          {router.pathname == '/' && (
-            <div className="z-50 order-first  mt-4  flex space-x-2  text-sm font-semibold lg:mt-6 lg:justify-center ">
-              <nav
-                aria-label="Breadcrumbs"
-                className="z-50 order-first  mt-4 flex justify-center space-x-2 text-sm font-semibold lg:mt-24 "
-              >
+            {router.pathname == '/' && (
+              <div className="flex inline-flex ">
+                <p className="mt-2 flex shrink-0 text-lg text-gray-500 lg:text-xl">
+                  Discover our herbal products. |{' '}
+                </p>{' '}
                 <Link
                   href="/herbs"
-                  className="rounded-md bg-teal-500 py-2  px-4 text-xl text-sm font-medium  text-white  md:block lg:text-4xl "
+                  className="opacity-1   z-30  mt-1 flex max-h-[34px] w-full  items-center justify-center rounded-full px-2.5 py-2 text-xl text-sm font-medium  text-teal-600 shadow-sm hover:bg-teal-600 hover:text-teal-100 focus:underline  focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-full sm:flex-grow-0 lg:max-h-[44px]"
                 >
-                  View more teas
-                  <span aria-hidden="true"> →</span>
+                  Herbal Remedy Teashopl
                 </Link>
-              </nav>
-            </div>
-          )}
+              </div>
+            )}
+          </div>
         </section>
       </div>
     </div>

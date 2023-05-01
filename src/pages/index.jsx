@@ -191,15 +191,15 @@ export default function Home() {
             </p>
           </div> */}
         </div>
-        <Signature />
+        {/* <Signature /> */}
       </Container>
-      <Image
+      {/* <Image
         src={theHerbalImage.src}
         className="h-full w-full "
         alt="theherbalRemedy image"
         width={400}
         height={400}
-      />
+      /> */}
     </>
   )
 }
