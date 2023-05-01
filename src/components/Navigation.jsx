@@ -407,7 +407,11 @@ export default function Navigation({ pageContent, featured }) {
                       </Transition.Child>
                       <div className="h-0 flex-1 overflow-y-auto pt-0 pb-4">
                         <div className="flex flex-shrink-0 items-center bg-teal-400 px-4 py-2 text-white">
-                          <Link href="/" className="sm:text-lg">
+                          <Link
+                            href="/"
+                            className="sm:text-lg"
+                            onClick={() => setSidebarOpen(false)}
+                          >
                             Home
                           </Link>
                         </div>
@@ -493,7 +497,7 @@ export default function Navigation({ pageContent, featured }) {
                   <div className="flex items-center justify-between border-b border-yellow-300 bg-transparent px-4 py-1.5">
                     <button
                       type="button"
-                      className=" inline-flex h-4 w-4  items-center justify-center rounded-md text-white hover:text-teal-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-600"
+                      className=" inline-flex h-4 w-4 items-center justify-center rounded-md text-white text-white hover:text-teal-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-600"
                       onClick={() => setSidebarOpen(true)}
                     >
                       <span className="sr-only">Open sidebar</span>
