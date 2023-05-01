@@ -23,7 +23,8 @@ import {
 } from '@heroicons/react/24/outline'
 import Features from '@/components/features'
 import theHerbalImage from '@/images/theherbalRemedy.JPG'
-import { EdibleItems, HearbItems, StoreItems } from '@/components/storeItems'
+import EdibleItems from '@/components/EdibleItems'
+import HerbItems from '@/components/HerbItems'
 import Contact from './contact'
 import { Signature } from '@/components/Signature'
 
@@ -101,7 +102,7 @@ export default function Home() {
       </div>
       <div className="">
         <Features />
-        <HearbItems number={4} />
+        <HerbItems number={4} />
         <img
           src="/bottom-right.webp"
           className="illustrated-background z-10 -mt-64 lg:-mt-[50rem]"

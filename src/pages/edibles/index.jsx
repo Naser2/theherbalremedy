@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import { EdibleItems } from '@/components/storeItems'
+import EdibleItems from '@/components/EdibleItems'
 const people = [
   {
     name: 'Women',
