@@ -124,7 +124,7 @@ export default function Home() {
 
                 <div className={'text-2xl lg:text-2xl'}>
                   <p className="inline-flex font-medium  text-gray-500 group-hover:text-gray-700">
-                    <span className="text-sky-500 hover:text-blue-600 hover:underline">
+                    <span className=" hover:text-blue-600 hover:underline">
                       1 (678) 964-4655
                     </span>
                   </p>
@@ -138,7 +138,7 @@ export default function Home() {
                   href="https://goo.gl/maps/b3U2ZaYAmsH8qoDN6"
                   className="overflow-wrap  text-2xl font-medium text-slate-500 group-hover:text-gray-700"
                 >
-                  <span className="overflow-wrap text-sky-400   hover:text-blue-600 hover:underline">
+                  <span className="overflow-wrap  hover:text-blue-600 hover:underline">
                     2154 2nd Ave, New York, NY 10029
                   </span>
                 </Link>

@@ -435,7 +435,7 @@ export default function Navigation({ pageContent, featured }) {
                                     item.current
                                       ? 'text-gray-500'
                                       : 'text-gray-400 group-hover:text-gray-500',
-                                    'mr-4 h-6 w-6'
+                                    'mr-4 h-6 w-6 text-gray-600'
                                   )}
                                   aria-hidden="true"
                                 />
@@ -562,7 +562,7 @@ const DesktopNavigation = () => {
                       tab.current
                         ? 'border-b-4 border-t-4 border-b-yellow-400 border-t-yellow-400  bg-teal-200  text-3xl text-teal-600  text-gray-900 '
                         : 'border-transparent text-white  hover:border-gray-300 hover:text-gray-700',
-                      'whitespace-nowrap border-b-2 py-4  px-4 px-6  text-2xl text-sm font-medium  text-white hover:text-teal-100 '
+                      'whitespace-nowrap border-b-2 py-4  px-4 px-6  text-2xl text-sm font-medium  text-white hover:text-teal-600 '
                     )}
                     aria-current={tab.current ? 'page' : undefined}
                   >
