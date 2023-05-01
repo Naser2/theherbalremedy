@@ -344,7 +344,7 @@ export default function Navigation({ pageContent, featured }) {
         <body class="h-full overflow-hidden">
         ```
       */}
-      <header className="relative z-50 z-50 mx-4 mt-0 mt-[14px]  flex transform flex-col bg-transparent pt-0 pb-0 max-[100px]:px-12 min-[1400px]:mx-36">
+      <header className="relative z-50 z-50 mx-4 mt-0 mt-[14px]  mr-2 flex transform flex-col bg-transparent pt-0 pb-0 max-[100px]:px-12 min-[1400px]:mx-36">
         <div
           id="nav-grid"
           className="relative grid grid-cols-[1fr,auto] items-center bg-transparent"

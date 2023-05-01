@@ -22,17 +22,17 @@ export const EdibleItems = ({ number }) => {
   const router = useRouter()
 
   return (
-    <>
+    <div className="">
       <Image
         src={ediblesBG.src}
         alt="landing-hero-background"
         width="1658"
         height="1660"
-        className="inset-0 -z-10  -mt-14 aspect-[418/252] h-[484px] h-[284px] w-full object-cover object-center lg:-mt-24 "
+        className="inset-0 -z-10  -mt-14 aspect-[418/252] h-[484px] h-[284px] w-full overflow-hidden object-cover object-center lg:-mt-24"
       />
       <div className="z-30 mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:pb-32 sm:pt-24 lg:px-8">
         <div className="max-w-xl">
-          <h1 className="text-3xl font-bold tracking-tight text-gray-900">
+          <h1 className="text-center text-3xl font-bold tracking-tight  text-teal-500 lg:text-5xl">
             Edibles
           </h1>
           {router.pathname == '/' && (
@@ -114,7 +114,7 @@ export const EdibleItems = ({ number }) => {
           {/* ))} */}
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
