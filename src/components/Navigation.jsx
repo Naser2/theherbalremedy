@@ -313,10 +313,11 @@ let tabPannel = [
   { name: 'Home', href: '/', current: true },
   { name: 'Edibles', href: '/edibles', current: false },
   { name: 'Teas', href: '/herbs', current: false },
-  { name: 'Scheduled ', href: '/events', current: false },
+
   { name: 'Events Spaces ', href: '/eventspace', current: false },
   { name: 'About ', href: '/about', current: false },
   { name: 'Contact ', href: '/contact', current: false },
+  { name: 'Scheduled ', href: '/events', current: false },
 ]
 export default function Navigation({ pageContent, featured }) {
   const [sidebarOpen, setSidebarOpen] = useState(false)
