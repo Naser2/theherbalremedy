@@ -1,7 +1,5 @@
 import Head from 'next/head'
 
-import { getItems } from '@/lib/getItems'
-
 import { EdibleItems } from '@/components/storeItems'
 const people = [
   {

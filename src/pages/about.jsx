@@ -7,7 +7,7 @@ import TheHerbalMain from '@/images/the-herbal-remedy-main.webp'
 import team1 from '@/images/team1.jpg'
 import team2 from '@/images/team2.jpg'
 import team3 from '@/images/team3.jpg'
-import { Container } from '@/components/Container'
+
 import {
   InstagramIcon,
   LinkedInIcon,

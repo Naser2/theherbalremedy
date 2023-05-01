@@ -1,18 +1,7 @@
 import Head from 'next/head'
 
-import { Card } from '@/components/Card'
-import { Section } from '@/components/Section'
-import { SimpleLayout } from '@/components/SimpleLayout'
-import { getItems } from '@/lib/getItems'
-
-import Link from 'next/link'
-
-import { Container } from '@/components/Container'
-import Image from 'next/image'
-
-import { findFeatured } from '@/lib/findFeatured'
-import OurSpace, { EventsSpace } from '@/components/OurSpace'
 import mainSpaceImage from '@/images/1e97ce93-9be6-4f4a-b6c9-2f0e84959243.JPG'
+import { EventsSpace } from '@/components/OurSpace'
 const people = [
   {
     name: 'Women',
