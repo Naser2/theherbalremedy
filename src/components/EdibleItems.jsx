@@ -14,8 +14,110 @@ import storeItem8 from '@/images/store/storItem8.webp'
 import storeItem9 from '@/images/store/storItem9.jpeg'
 import storeItem10 from '@/images/store/storItem10.webp'
 import storeItem11 from '@/images/store/storItem11.jpeg'
-
+// import teasBg from '@/images/herbal-remedies-shutterstock.jpeg'
+import ediblesBG from '@/images/teasBgMain.png'
 import Link from 'next/link'
+import Image from 'next/image'
+export const EdibleItems = ({ number }) => {
+  const router = useRouter()
+
+  return (
+    <>
+      <Image
+        src={ediblesBG.src}
+        alt="landing-hero-background"
+        width="1658"
+        height="1660"
+        className="inset-0 -z-10  -mt-14 aspect-[418/252] h-[484px] h-[284px] w-full object-cover object-center lg:-mt-24 "
+      />
+      <div className="z-30 mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:pb-32 sm:pt-24 lg:px-8">
+        <div className="max-w-xl">
+          <h1 className="text-3xl font-bold tracking-tight text-gray-900">
+            Edibles
+          </h1>
+          {router.pathname == '/' && (
+            <h2 class="font-medium text-gray-500 lg:text-2xl">
+              Heerbal based edibles{' '}
+            </h2>
+          )}
+          {router.pathname == '/herbs' && (
+            <h2 class="font-medium text-gray-500">
+              All herbal based edibles{' '}
+              {router.pathname == '/' && (
+                <Link
+                  href="/herbs"
+                  className="text-4xl text-slate-500  hover:text-slate-600"
+                >
+                  TEAS
+                </Link>
+              )}
+            </h2>
+          )}
+        </div>
+
+        <div className="mt-12 space-y-16 sm:mt-16 ">
+          {/* <Image
+          src={teasBg.src}
+          alt="landing-hero-background"
+          width="1658"
+          height="1660"
+          className="lg: absolute inset-0 -z-10  -mt-4 aspect-[418/252] h-[484px] h-[284px] w-full object-cover object-center "
+        /> */}
+          {/* {edibles.map((order) => (key={order.number} aria-labelledby={`${order.number}-heading`} */}
+          <section>
+            <div className="border-gray-20 -mb-6 mt-6 flow-root divide-y divide-gray-200 border-t md:grid md:grid-cols-2 ">
+              {edibles.slice(0, number).map((product) => (
+                <div key={product.id} className="py-6 sm:flex">
+                  <div className="flex space-x-4 sm:min-w-0 sm:flex-1 sm:space-x-6 lg:space-x-8">
+                    <img
+                      src={product.item.imageSrc.src}
+                      alt={product.item.imageAlt}
+                      className="h-20 w-20 flex-none rounded-md border border-2 border-sky-100 object-cover object-center sm:h-48 sm:w-48 lg:h-64 lg:w-64"
+                    />
+                    <div className="min-w-0 flex-1 pt-1.5 sm:pt-0">
+                      <h3 className="text-lg font-medium text-gray-900 md:text-xl">
+                        <a href={product.item.href}>{product.item.name}</a>
+                      </h3>
+                      <p className="text-md truncate text-gray-500">
+                        <span className="text-md  text-gray-500">
+                          {product.item.color}
+                        </span>
+
+                        {/* <span>{product.item.size}</span> */}
+                      </p>
+                      <p className="mt-1 font-medium text-gray-900">
+                        {product.item.price}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {router.pathname == '/' && (
+              <div className="z-50 order-first mt-4   flex space-x-2  text-sm font-semibold lg:mt-6 lg:justify-center ">
+                <nav
+                  aria-label="Breadcrumbs"
+                  className="z-50 order-first  mt-4 flex justify-center space-x-2 text-sm font-semibold lg:mt-24 "
+                >
+                  <Link
+                    href="/herbs"
+                    className="rounded-md bg-teal-500 py-2  px-4 text-xl text-sm font-medium text-white  md:block lg:text-4xl "
+                  >
+                    View more edibles
+                    <span aria-hidden="true"> →</span>
+                  </Link>
+                </nav>
+              </div>
+            )}
+          </section>
+          {/* ))} */}
+        </div>
+      </div>
+    </>
+  )
+}
+
 const edibles = [
   {
     number: '4376',
@@ -237,89 +339,5 @@ const edibles = [
   },
   // More edibles...
 ]
-
-export const EdibleItems = ({ number }) => {
-  const router = useRouter()
-
-  return (
-    <div className="z-30 mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:pb-32 sm:pt-24 lg:px-8">
-      <div className="max-w-xl">
-        <h1 className="text-3xl font-bold tracking-tight text-gray-900">
-          Our Infused Menu
-        </h1>
-        {router.pathname == '/' && (
-          <h2 class="font-medium text-gray-500 lg:text-2xl">
-            Heerbal based edibles{' '}
-          </h2>
-        )}
-        {router.pathname == '/herbs' && (
-          <h2 class="font-medium text-gray-500">
-            All herbal based edibles{' '}
-            {router.pathname == '/' && (
-              <Link
-                href="/herbs"
-                className="text-4xl text-slate-500  hover:text-slate-600"
-              >
-                TEAS
-              </Link>
-            )}
-          </h2>
-        )}
-      </div>
-
-      <div className="mt-12 space-y-16 sm:mt-16 ">
-        {/* {edibles.map((order) => (key={order.number} aria-labelledby={`${order.number}-heading`} */}
-        <section>
-          <div className="border-gray-20 -mb-6 mt-6 flow-root divide-y divide-gray-200 border-t md:grid md:grid-cols-2 ">
-            {edibles.slice(0, number).map((product) => (
-              <div key={product.id} className="py-6 sm:flex">
-                <div className="flex space-x-4 sm:min-w-0 sm:flex-1 sm:space-x-6 lg:space-x-8">
-                  <img
-                    src={product.item.imageSrc.src}
-                    alt={product.item.imageAlt}
-                    className="h-20 w-20 flex-none rounded-md border border-2 border-sky-100 object-cover object-center sm:h-48 sm:w-48 lg:h-64 lg:w-64"
-                  />
-                  <div className="min-w-0 flex-1 pt-1.5 sm:pt-0">
-                    <h3 className="text-lg font-medium text-gray-900 md:text-xl">
-                      <a href={product.item.href}>{product.item.name}</a>
-                    </h3>
-                    <p className="text-md truncate text-gray-500">
-                      <span className="text-md  text-gray-500">
-                        {product.item.color}
-                      </span>
-
-                      {/* <span>{product.item.size}</span> */}
-                    </p>
-                    <p className="mt-1 font-medium text-gray-900">
-                      {product.item.price}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {router.pathname == '/' && (
-            <div className="z-50 order-first mt-4   flex space-x-2  text-sm font-semibold lg:mt-6 lg:justify-center ">
-              <nav
-                aria-label="Breadcrumbs"
-                className="z-50 order-first  mt-4 flex justify-center space-x-2 text-sm font-semibold lg:mt-24 "
-              >
-                <Link
-                  href="/herbs"
-                  className="rounded-md bg-teal-500 py-2  px-4 text-xl text-sm font-medium text-white  md:block lg:text-4xl "
-                >
-                  View more edibles
-                  <span aria-hidden="true"> →</span>
-                </Link>
-              </nav>
-            </div>
-          )}
-        </section>
-        {/* ))} */}
-      </div>
-    </div>
-  )
-}
 
 export default EdibleItems

@@ -14,73 +14,83 @@ import herbalItem8 from '@/images/store/herb8.webp'
 import herbalItem9 from '@/images/store/herb9.webp'
 import herbalItem10 from '@/images/store/herb10.webp'
 import herbalItem11 from '@/images/store/herb11.webp'
-
+import teasBg from '@/images/herbal-remedies-shutterstock.jpeg'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const HerbItems = ({ number }) => {
   const router = useRouter()
   return (
-    <div className="z-30 mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:pb-32 sm:pt-24 lg:px-8">
-      <div className="mx-4 max-w-xl">
-        <h1 className="text-3xl font-bold tracking-tight text-gray-900 lg:text-5xl ">
-          Herb Menu
-        </h1>
-        {router.pathname == '/herbs' && (
-          <h2 class="text-xl font-medium  text-gray-500  lg:text-2xl">
-            All our teas
+    <>
+      <Image
+        src={teasBg.src}
+        alt="landing-hero-background"
+        width="1658"
+        height="1660"
+        className="inset-0 -z-10  -mt-14 aspect-[418/252] h-[484px] h-[284px] w-full object-cover object-center lg:-mt-24 "
+      />
+      <div className="z-30 mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:pb-32 sm:pt-24 lg:px-8">
+        <div className="flex justify-center rounded-md bg-white px-4 px-2 lg:py-4">
+          <h1 className="text-center text-3xl font-bold tracking-tight  text-teal-500 lg:text-5xl">
+            Teas
+          </h1>
+          {/* {router.pathname == '/herbs' && (
+          <h2 class="mt-0.5 pl-2 text-xl  font-medium text-gray-500 lg:mt-4  lg:pl-6  lg:text-2xl">
+            / Teas
           </h2>
-        )}
-      </div>
+        )} */}
+        </div>
 
-      <div className="mt-12 space-y-16 sm:mt-16 ">
-        <section>
-          <div className="border-gray-20 -mb-6 mt-6 flow-root divide-y divide-gray-200 border-t md:grid md:grid-cols-2 ">
-            {herbals.slice(0, number).map((product) => (
-              <div key={product.id} className="py-6 sm:flex">
-                <div className="flex space-x-4 sm:min-w-0 sm:flex-1 sm:space-x-6 lg:space-x-8">
-                  <img
-                    src={product.item.imageSrc.src}
-                    alt={product.item.imageAlt}
-                    className="h-20 w-20 flex-none rounded-md object-cover object-center sm:h-48 sm:w-48"
-                  />
-                  <div className="min-w-0 flex-1 pt-1.5 sm:pt-0">
-                    <h3 className="lg:  text-sm text-xl font-medium text-gray-900">
-                      <a href={product.href}>{product.item.name}</a>
-                    </h3>
-                    <p className=" text-sm text-sm  text-xl text-gray-500">
-                      <span>{product.item.color}</span>{' '}
-                      <span className="mx-1 text-gray-400" aria-hidden="true">
-                        &middot;
-                      </span>{' '}
-                      {/* <span>{product.item.size}</span> */}
-                    </p>
-                    <p className=" -m-2 pl-2 text-sm font-medium  text-gray-900 lg:mt-1 lg:text-xl">
-                      {product.item.price}
-                    </p>
+        <div className="mt-12 space-y-16 sm:mt-16 ">
+          <section>
+            <div className="border-gray-20 -mb-6 mt-6 flow-root divide-y divide-gray-200 border-t md:grid md:grid-cols-2 ">
+              {herbals.slice(0, number).map((product) => (
+                <div key={product.id} className="py-6 sm:flex">
+                  <div className="flex space-x-4 sm:min-w-0 sm:flex-1 sm:space-x-6 lg:space-x-8">
+                    <img
+                      src={product.item.imageSrc.src}
+                      alt={product.item.imageAlt}
+                      className="h-20 w-20 flex-none rounded-md object-cover object-center sm:h-48 sm:w-48 "
+                    />
+                    <div className="min-w-0 flex-1 pt-1.5 sm:pt-0">
+                      <h3 className="lg:  text-sm text-xl font-medium text-gray-900 lg:mt-5">
+                        <a href={product.href}>{product.item.name}</a>
+                      </h3>
+                      <p className=" text-sm text-sm text-gray-500  lg:text-lg">
+                        <span>{product.item.color}</span>{' '}
+                        <span className="mx-1 text-gray-400" aria-hidden="true">
+                          &middot;
+                        </span>{' '}
+                        {/* <span>{product.item.size}</span> */}
+                      </p>
+                      <p className=" -m-2 pl-2 text-sm font-medium  text-gray-900 lg:mt-3 lg:text-xl">
+                        {product.item.price}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>{' '}
-          {router.pathname == '/' && (
-            <div className="z-50 order-first  mt-4  flex space-x-2  text-sm font-semibold lg:mt-6 lg:justify-center ">
-              <nav
-                aria-label="Breadcrumbs"
-                className="z-50 order-first  mt-4 flex justify-center space-x-2 text-sm font-semibold lg:mt-24 "
-              >
-                <Link
-                  href="/herbs"
-                  className="rounded-md bg-teal-500 py-2  px-4 text-xl text-sm font-medium  text-white  md:block lg:text-4xl "
+              ))}
+            </div>{' '}
+            {router.pathname == '/' && (
+              <div className="z-50 order-first  mt-4  flex space-x-2  text-sm font-semibold lg:mt-6 lg:justify-center ">
+                <nav
+                  aria-label="Breadcrumbs"
+                  className="z-50 order-first  mt-4 flex justify-center space-x-2 text-sm font-semibold lg:mt-24 "
                 >
-                  View more teas
-                  <span aria-hidden="true"> →</span>
-                </Link>
-              </nav>
-            </div>
-          )}
-        </section>
+                  <Link
+                    href="/herbs"
+                    className="rounded-md bg-teal-500 py-2  px-4 text-xl text-sm font-medium  text-white  md:block lg:text-4xl "
+                  >
+                    View more teas
+                    <span aria-hidden="true"> →</span>
+                  </Link>
+                </nav>
+              </div>
+            )}
+          </section>
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 
