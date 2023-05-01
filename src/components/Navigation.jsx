@@ -394,7 +394,7 @@ export default function Navigation({ pageContent, featured }) {
                         <div className="absolute top-0 right-0">
                           <button
                             type="button"
-                            className="z-50   flex h-10 w-10 items-center justify-center rounded-full bg-teal-400 text-black shadow-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-600  "
+                            className="z-50   flex h-10 w-10 items-center justify-center rounded-full bg-teal-400 text-black shadow-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-400  "
                             onClick={() => setSidebarOpen(false)}
                           >
                             <span className="sr-only">Close sidebar</span>
@@ -485,7 +485,7 @@ export default function Navigation({ pageContent, featured }) {
             </Transition.Root>
             {/* Static sidebar for desktop */}
             <DesktopNavigation tabs={tabs} />
-            <div className="flex min-w-0 flex-1 flex-col overflow-hidden">
+            <div className="flex min-w-0 flex-1 flex-col overflow-hidden bg-teal-400">
               {!sidebarOpen && (
                 <div className="min-[1300px]:hidden">
                   <div className="flex items-center justify-between border-b border-yellow-300 bg-transparent px-4 py-1.5">

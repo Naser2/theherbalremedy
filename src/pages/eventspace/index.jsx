@@ -4,14 +4,12 @@ import { Card } from '@/components/Card'
 import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { getItems } from '@/lib/getItems'
-// import { ArtPageLayout } from '@/components/ArtPageLayout'
-// import { Galery } from '@/components/Gallery'
+
 import Link from 'next/link'
-// import { Title } from '@/components/Title'
-// import { DirectorCredentials } from '@/components/DirectorCredentials'
+
 import { Container } from '@/components/Container'
 import Image from 'next/image'
-import Page from '@/components/Page'
+
 import { findFeatured } from '@/lib/findFeatured'
 import OurSpace, { EventsSpace } from '@/components/OurSpace'
 import mainSpaceImage from '@/images/1e97ce93-9be6-4f4a-b6c9-2f0e84959243.JPG'

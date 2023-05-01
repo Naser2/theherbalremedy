@@ -1,18 +1,7 @@
 import Head from 'next/head'
-import clsx from 'clsx'
-import { Card, Tag } from '@/components/Card'
-import { Section } from '@/components/Section'
-import { SimpleLayout } from '@/components/SimpleLayout'
+
 import { getItems } from '@/lib/getItems'
-// import { ArtPageLayout } from '@/components/ArtPageLayout'
-// import { Galery } from '@/components/Gallery'
-import Link from 'next/link'
-// import { Title } from '@/components/Title'
-// import { DirectorCredentials } from '@/components/DirectorCredentials'
-import { Container } from '@/components/Container'
-import Image from 'next/image'
-import Page from '@/components/Page'
-import { Carousel, ContentSlider } from '@/components/carousel/Corousel'
+
 import { EdibleItems } from '@/components/storeItems'
 const people = [
   {
@@ -108,13 +97,3 @@ const ToggleButtons = () => {
 // Application Testing
 // Deployment
 // Support and Performance Monitoring
-export async function getStaticProps() {
-  let reiki = await getItems('Reiki')
-  console.log('REIKI  ', reiki)
-  return {
-    props: {
-      reiki: reiki,
-      featured: reiki[0].resources[0],
-    },
-  }
-}

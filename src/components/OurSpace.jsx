@@ -99,7 +99,7 @@ export const EventsSpace = () => {
           </h1>
           <nav
             aria-label="Breadcrumbs"
-            className="justtify-center  order-first mx-auto flex max-w-2xl  space-x-2 text-center text-center text-lg text-sm font-semibold text-teal-500 lg:max-w-4xl lg:text-2xl"
+            className="justtify-center  order-first mx-auto flex max-w-2xl  space-x-2 text-center text-center text-lg text-sm font-semibold text-slate-500 lg:max-w-4xl lg:text-2xl"
           >
             <h2
               class=" hover:text-slate-600"
@@ -152,15 +152,6 @@ export const EventsSpace = () => {
         </div>
 
         <div className="mx-auto max-w-2xl px-4 pb-24 pt-1 sm:px-6 sm:pb-32 lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:pt-4">
-          <p class="mt-4 text-xs text-slate-500">
-            Event space images{' '}
-            <a
-              href="https://goo.gl/maps/b3U2ZaYAmsH8qoDN6"
-              class="font-medium text-sky-600 hover:text-sky-700"
-            >
-              Ugmonk
-            </a>
-          </p>
           <div className="lg:col-start-2 lg:mt-14 ">
             <h2
               id="features-heading"

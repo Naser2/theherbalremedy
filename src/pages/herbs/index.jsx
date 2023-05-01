@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 import Link from 'next/link'
-import { GoBackArrow } from '@/components/Goback'
+// import { GoBackArrow } from '@/components/Goback'
 import { findFeatured } from '@/lib/findFeatured'
 import { HearbItems } from '@/components/storeItems'
 const people = [
@@ -38,7 +38,7 @@ export default function Herbs({ diets, featured }) {
           content="These are diets crafted by Herbal Remedy Teashop"
         />
       </Head>
-      <GoBackArrow />
+      {/* <GoBackArrow /> */}
       <HearbItems number={-1} />
       {/* <Container>
         {' '}

@@ -10,7 +10,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
 import { PlayButton } from './PlayButton'
-import { Carousel } from './carousel/Corousel'
+
 import mainBg from '@/images/1ff3799c-df72-417e-906d-ff9229b29d15.JPG'
 import logo from '@/images/logo.JPG'
 

@@ -14,7 +14,7 @@ import { getArt } from '@/lib/getArt'
 import { getMotion } from '@/lib/getMotion'
 import { PodcastsPageLayout } from '@/components/PodcastsPageLayout'
 import { getAllArts } from '@/lib/getAllArts'
-import { GoBackArrow } from '@/components/Goback'
+// import { GoBackArrow } from '@/components/Goback'
 import { ProjectLayout } from '@/components/ProjectLayout'
 // import { Header } from '@/components/Header'
 const languages = ['en', 'fr', 'hn']

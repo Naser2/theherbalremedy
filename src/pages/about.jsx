@@ -116,7 +116,7 @@ export default function About() {
       </div>
 
       {/* Team section */}
-      <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
+      <div className="mx-auto mt-12  max-w-7xl px-6 sm:mt-40 lg:px-8 ">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-black sm:text-5xl">
             Our team
@@ -224,14 +224,14 @@ const team = [
     role: 'Co-Founder / CEO',
     imageUrl: team1.src,
     location: 'Harlem Born , NY',
-    passion: 'Educator, Businessman &  cryptoentusiast',
+    passion: 'Educator, Businessman & Crypto-entusiast',
   },
   {
     name: 'Ryan Magner',
     role: 'Co-Founder / CFO',
     imageUrl: team2.src,
     location: 'Harlem , NY',
-    passion: 'Real Estate &  Technology Investor',
+    passion: 'Real Estate &  Emerging technology investor',
   },
   {
     name: 'Jhonson Mccafee ',

@@ -40,9 +40,9 @@ const edibles = [
     invoiceHref: '#',
     item: {
       id: 1,
-      name: 'Machined Brass Puzzle',
+      name: 'Pina Coloda Muchkinz',
       href: '#',
-      price: '$95.00',
+      price: '$11.00',
       color: 'Brass',
       size: '3" x 3" x 3"',
       imageSrc: storeItem,
@@ -59,9 +59,9 @@ const edibles = [
     invoiceHref: '#',
     item: {
       id: 1,
-      name: 'Machined Brass Puzzle',
+      name: 'James Brown Funky Chai',
       href: '#',
-      price: '$95.00',
+      price: '$12.00',
       color: 'Brass',
       size: '3" x 3" x 3"',
 
@@ -78,9 +78,9 @@ const edibles = [
     invoiceHref: '#',
     item: {
       id: 1,
-      name: 'Machined Brass Puzzle',
+      name: 'yuletide toddy',
       href: '#',
-      price: '$95.00',
+      price: '$12.00',
       color: 'Brass',
       size: '3" x 3" x 3"',
       imageSrc: storeItem2,
@@ -96,9 +96,9 @@ const edibles = [
     invoiceHref: '#',
     item: {
       id: 1,
-      name: 'Machined Brass Puzzle',
+      name: 'Yuletide toddy',
       href: '#',
-      price: '$95.00',
+      price: '$12.00',
       color: 'Brass',
       size: '3" x 3" x 3"',
       imageSrc: storeItem3,
@@ -114,9 +114,9 @@ const edibles = [
     invoiceHref: '#',
     item: {
       id: 1,
-      name: 'Machined Brass Puzzle',
+      name: 'Sour Apple',
       href: '#',
-      price: '$95.00',
+      price: '$12.00',
       color: 'Brass',
       size: '3" x 3" x 3"',
       imageSrc: storeItem4,
@@ -132,9 +132,9 @@ const edibles = [
     invoiceHref: '#',
     item: {
       id: 1,
-      name: 'Machined Brass Puzzle',
+      name: 'ChiroChico Realm',
       href: '#',
-      price: '$95.00',
+      price: '$17.00',
       color: 'Brass',
       size: '3" x 3" x 3"',
       imageSrc: storeItem5,
@@ -150,9 +150,9 @@ const edibles = [
     invoiceHref: '#',
     item: {
       id: 1,
-      name: 'Machined Brass Puzzle',
+      name: 'Hit me again',
       href: '#',
-      price: '$95.00',
+      price: '$17.00',
       color: 'Brass',
       size: '3" x 3" x 3"',
       imageSrc: storeItem6,
@@ -168,9 +168,9 @@ const edibles = [
     invoiceHref: '#',
     item: {
       id: 1,
-      name: 'Machined Brass Puzzle',
+      name: 'Dewy Chewy',
       href: '#',
-      price: '$95.00',
+      price: '$17.00',
       color: 'Brass',
       size: '3" x 3" x 3"',
       imageSrc: storeItem7,
@@ -186,9 +186,9 @@ const edibles = [
     invoiceHref: '#',
     item: {
       id: 1,
-      name: 'Machined Brass Puzzle',
+      name: 'Lemon Grass paper',
       href: '#',
-      price: '$95.00',
+      price: '$17.00',
       color: 'Brass',
       size: '3" x 3" x 3"',
       imageSrc: storeItem8,
@@ -204,9 +204,9 @@ const edibles = [
     invoiceHref: '#',
     item: {
       id: 1,
-      name: 'Machined Brass Puzzle',
+      name: 'Berry Blues ',
       href: '#',
-      price: '$95.00',
+      price: '$17.00',
       color: 'Brass',
       size: '3" x 3" x 3"',
       imageSrc: storeItem9,
@@ -222,9 +222,9 @@ const edibles = [
     invoiceHref: '#',
     item: {
       id: 1,
-      name: 'Machined Brass Puzzle',
+      name: 'red Macaroons Divine',
       href: '#',
-      price: '$95.00',
+      price: '$17.00',
       color: 'Brass',
       size: '3" x 3" x 3"',
       imageSrc: storeItem10,
@@ -240,9 +240,9 @@ const edibles = [
     invoiceHref: '#',
     item: {
       id: 1,
-      name: 'Machined Brass Puzzle',
+      name: 'Cha Cha Cha',
       href: '#',
-      price: '$95.00',
+      price: '$17.00',
       color: 'Brass',
       size: '3" x 3" x 3"',
       imageSrc: storeItem11,
@@ -328,10 +328,10 @@ export const EdibleItems = ({ number }) => {
                       <a href={product.item.href}>{product.item.name}</a>
                     </h3>
                     <p className="text-md truncate text-gray-500">
-                      <span>{product.color}</span>{' '}
-                      <span className="mx-1 text-gray-400" aria-hidden="true">
-                        &middot;
-                      </span>{' '}
+                      <span className="text-md  text-gray-500">
+                        {product.item.color}
+                      </span>
+
                       {/* <span>{product.item.size}</span> */}
                     </p>
                     <p className="mt-1 font-medium text-gray-900">
@@ -353,12 +353,14 @@ export const HearbItems = ({ number }) => {
   const router = useRouter()
   return (
     <div className="z-30 mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:pb-32 sm:pt-24 lg:px-8">
-      <div className="max-w-xl">
-        <h1 className="text-3xl font-bold tracking-tight text-gray-900">
+      <div className="mx-4 max-w-xl">
+        <h1 className="text-3xl font-bold tracking-tight text-gray-900 lg:text-5xl ">
           Herb Menu
         </h1>
         {router.pathname == '/herbs' && (
-          <h2 class="font-medium text-gray-500">All our teas</h2>
+          <h2 class="text-xl font-medium  text-gray-500  lg:text-2xl">
+            All our teas
+          </h2>
         )}
         {router.pathname == '/' && (
           <div className="flex inline-flex ">
@@ -387,17 +389,17 @@ export const HearbItems = ({ number }) => {
                     className="h-20 w-20 flex-none rounded-md object-cover object-center sm:h-48 sm:w-48"
                   />
                   <div className="min-w-0 flex-1 pt-1.5 sm:pt-0">
-                    <h3 className="text-sm font-medium text-gray-900">
+                    <h3 className="lg:  text-sm text-xl font-medium text-gray-900">
                       <a href={product.href}>{product.item.name}</a>
                     </h3>
-                    <p className="truncate text-sm text-gray-500">
-                      <span>{product.color}</span>{' '}
+                    <p className=" text-sm text-sm  text-xl text-gray-500">
+                      <span>{product.item.color}</span>{' '}
                       <span className="mx-1 text-gray-400" aria-hidden="true">
                         &middot;
                       </span>{' '}
                       {/* <span>{product.item.size}</span> */}
                     </p>
-                    <p className="mt-1 font-medium text-gray-900">
+                    <p className=" -m-2 pl-2 text-sm font-medium  text-gray-900 lg:mt-1 lg:text-xl">
                       {product.item.price}
                     </p>
                   </div>
@@ -419,47 +421,10 @@ const herbals = [
     invoiceHref: '#',
     item: {
       id: 1,
-      name: 'Machined Brass Puzzle',
+      name: 'Yuletide toddy herbal',
       href: '#',
-      price: '$15.00',
-      color: 'Brass',
-      size: '3" x 3" x 3"',
-      imageSrc: herbalItem11,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
-    },
-    // More products...
-  },
-  {
-    number: '4376',
-    status: 'Delivered on January 22, 2021',
-    href: '#',
-    invoiceHref: '#',
-    item: {
-      id: 1,
-      name: 'Machined Brass Puzzle',
-      href: '#',
-      price: '$95.00',
-      color: 'Brass',
-      size: '3" x 3" x 3"',
-      imageSrc: herbalItem,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
-
-      // More item...
-    },
-  },
-  {
-    number: '4376',
-    status: 'Delivered on January 22, 2021',
-    href: '#',
-    invoiceHref: '#',
-    item: {
-      id: 1,
-      name: 'Machined Brass Puzzle',
-      href: '#',
-      price: '$95.00',
-      color: 'Brass',
+      price: '$12.00',
+      color: '24¢ / cup',
       size: '3" x 3" x 3"',
 
       imageSrc: herbalItem1,
@@ -468,6 +433,7 @@ const herbals = [
     },
     // More item...
   },
+
   {
     number: '4376',
     status: 'Delivered on January 22, 2021',
@@ -475,118 +441,10 @@ const herbals = [
     invoiceHref: '#',
     item: {
       id: 1,
-      name: 'Machined Brass Puzzle',
+      name: 'Aya Bonifire',
       href: '#',
-      price: '$95.00',
-      color: 'Brass',
-      size: '3" x 3" x 3"',
-      imageSrc: herbalItem2,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
-    },
-    // More item...
-  },
-  {
-    number: '4376',
-    status: 'Delivered on January 22, 2021',
-    href: '#',
-    invoiceHref: '#',
-    item: {
-      id: 1,
-      name: 'Machined Brass Puzzle',
-      href: '#',
-      price: '$95.00',
-      color: 'Brass',
-      size: '3" x 3" x 3"',
-      imageSrc: herbalItem3,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
-    },
-    // More item...
-  },
-  {
-    number: '4376',
-    status: 'Delivered on January 22, 2021',
-    href: '#',
-    invoiceHref: '#',
-    item: {
-      id: 1,
-      name: 'Machined Brass Puzzle',
-      href: '#',
-      price: '$95.00',
-      color: 'Brass',
-      size: '3" x 3" x 3"',
-      imageSrc: herbalItem4,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
-    },
-    // More item...
-  },
-  {
-    number: '4376',
-    status: 'Delivered on January 22, 2021',
-    href: '#',
-    invoiceHref: '#',
-    item: {
-      id: 1,
-      name: 'Machined Brass Puzzle',
-      href: '#',
-      price: '$95.00',
-      color: 'Brass',
-      size: '3" x 3" x 3"',
-      imageSrc: herbalItem6,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
-    },
-    // More products...
-  },
-  {
-    number: '4376',
-    status: 'Delivered on January 22, 2021',
-    href: '#',
-    invoiceHref: '#',
-    item: {
-      id: 1,
-      name: 'Machined Brass Puzzle',
-      href: '#',
-      price: '$95.00',
-      color: 'Brass',
-      size: '3" x 3" x 3"',
-      imageSrc: herbalItem7,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
-    },
-    // More products...
-  },
-  {
-    number: '4376',
-    status: 'Delivered on January 22, 2021',
-    href: '#',
-    invoiceHref: '#',
-    item: {
-      id: 1,
-      name: 'Machined Brass Puzzle',
-      href: '#',
-      price: '$95.00',
-      color: 'Brass',
-      size: '3" x 3" x 3"',
-      imageSrc: herbalItem8,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
-    },
-    // More products...
-  },
-  {
-    number: '4376',
-    status: 'Delivered on January 22, 2021',
-    href: '#',
-    invoiceHref: '#',
-    item: {
-      id: 1,
-      name: 'Machined Brass Puzzle',
-      href: '#',
-      price: '$95.00',
-      color: 'Brass',
+      price: '$23.00',
+      color: '20¢ / cup',
       size: '3" x 3" x 3"',
       imageSrc: herbalItem9,
       imageAlt:
@@ -601,10 +459,194 @@ const herbals = [
     invoiceHref: '#',
     item: {
       id: 1,
-      name: 'Machined Brass Puzzle',
+      name: 'Red Eye Toddy',
       href: '#',
-      price: '$95.00',
-      color: 'Brass',
+      price: '$20.00',
+      color: '23¢ / cup',
+      size: '3" x 3" x 3"',
+      imageSrc: herbalItem10,
+      imageAlt:
+        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+    },
+    // More products...
+  },
+
+  {
+    number: '4376',
+    status: 'Delivered on January 22, 2021',
+    href: '#',
+    invoiceHref: '#',
+    item: {
+      id: 1,
+      name: 'Yo Lele Rules again',
+      href: '#',
+      price: '$16.00',
+      color: '21¢ / cup',
+      size: '3" x 3" x 3"',
+      imageSrc: herbalItem,
+      imageAlt:
+        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+
+      // More item...
+    },
+  },
+
+  {
+    number: '4376',
+    status: 'Delivered on January 22, 2021',
+    href: '#',
+    invoiceHref: '#',
+    item: {
+      id: 1,
+      name: 'Sampler Life',
+      href: '#',
+      price: '$12.00',
+      color: '25¢ / cup',
+      size: '3" x 3" x 3"',
+      imageSrc: herbalItem3,
+      imageAlt:
+        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+    },
+    // More item...
+  },
+  {
+    number: '4376',
+    status: 'Delivered on January 22, 2021',
+    href: '#',
+    invoiceHref: '#',
+    item: {
+      id: 1,
+      name: 'Yeye Mafrika',
+      href: '#',
+      price: '$15.50',
+      color: '26¢ / cup',
+      size: '3" x 3" x 3"',
+      imageSrc: herbalItem4,
+      imageAlt:
+        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+    },
+    // More item...
+  },
+  {
+    number: '4376',
+    status: 'Delivered on January 22, 2021',
+    href: '#',
+    invoiceHref: '#',
+    item: {
+      id: 1,
+      name: 'Mango Mate',
+      href: '#',
+      price: '$15.00',
+      color: '23¢ / cup',
+      size: '3" x 3" x 3"',
+      imageSrc: herbalItem11,
+      imageAlt:
+        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+    },
+    // More products...
+  },
+  {
+    number: '4376',
+    status: 'Delivered on January 22, 2021',
+    href: '#',
+    invoiceHref: '#',
+    item: {
+      id: 1,
+      name: 'Citrus World',
+      href: '#',
+      price: '$17.00',
+      color: '28¢ / cup',
+      size: '3" x 3" x 3"',
+      imageSrc: herbalItem6,
+      imageAlt:
+        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+    },
+    // More products...
+  },
+  {
+    number: '4376',
+    status: 'Delivered on January 22, 2021',
+    href: '#',
+    invoiceHref: '#',
+    item: {
+      id: 1,
+      name: 'Arabicas Toast ',
+      href: '#',
+      price: '$14.00',
+      color: '20¢ / cup',
+      size: '3" x 3" x 3"',
+      imageSrc: herbalItem2,
+      imageAlt:
+        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+    },
+    // More item...
+  },
+  {
+    number: '4376',
+    status: 'Delivered on January 22, 2021',
+    href: '#',
+    invoiceHref: '#',
+    item: {
+      id: 1,
+      name: 'It takes two ',
+      href: '#',
+      price: '$17.00',
+      color: '20¢ / cup',
+      size: '3" x 3" x 3"',
+      imageSrc: herbalItem7,
+      imageAlt:
+        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+    },
+    // More products...
+  },
+  {
+    number: '4376',
+    status: 'Delivered on January 22, 2021',
+    href: '#',
+    invoiceHref: '#',
+    item: {
+      id: 1,
+      name: 'Pomegranate  Toast ',
+      href: '#',
+      price: '$17.00',
+      color: '20¢ / cup',
+      size: '3" x 3" x 3"',
+      imageSrc: herbalItem7,
+      imageAlt:
+        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+    },
+    // More products...
+  },
+  {
+    number: '4376',
+    status: 'Delivered on January 22, 2021',
+    href: '#',
+    invoiceHref: '#',
+    item: {
+      id: 1,
+      name: 'Yerba Grove',
+      href: '#',
+      price: '$18.00',
+      color: '20¢ / cup',
+      size: '3" x 3" x 3"',
+      imageSrc: herbalItem8,
+      imageAlt:
+        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+    },
+    // More products...
+  },
+
+  {
+    number: '4376',
+    status: 'Delivered on January 22, 2021',
+    href: '#',
+    invoiceHref: '#',
+    item: {
+      id: 1,
+      name: 'King Sinatra',
+      href: '#',
+      price: '$20.00',
+      color: '15¢ / cup',
       size: '3" x 3" x 3"',
       imageSrc: herbalItem10,
       imageAlt:
@@ -619,15 +661,16 @@ const herbals = [
     invoiceHref: '#',
     item: {
       id: 1,
-      name: 'Machined Brass Puzzle',
+      name: 'King Sinatra Upgraded ',
       href: '#',
-      price: '$95.00',
-      color: 'Brass',
+      price: '$10.00',
+      color: '15¢ / cup',
       size: '3" x 3" x 3"',
       imageSrc: herbalItem11,
       imageAlt:
         'Brass puzzle in the shape of a jack with overlapping rounded posts.',
     },
+
     // More products...
   },
   //   {
@@ -637,9 +680,9 @@ const herbals = [
   //     invoiceHref: '#',
   //     item: {
   //       id: 1,
-  //       name: 'Machined Brass Puzzle',
+  //       name: 'Yuletide Herbal',
   //       href: '#',
-  //       price: '$95.00',
+  //       price: '$11.00',
   //       color: 'Brass',
   //       size: '3" x 3" x 3"',
   //       imageSrc: herbalItem12,
