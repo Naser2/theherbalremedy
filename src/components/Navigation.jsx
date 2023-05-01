@@ -487,34 +487,31 @@ export default function Navigation({ pageContent, featured }) {
             </Transition.Root>
             {/* Static sidebar for desktop */}
             <DesktopNavigation tabs={tabs} />
-            {/*  <div className="flex min-w-0 flex-1 flex-col overflow-hidden bg-teal-400">
+            <div className="flex min-w-0 flex-1 flex-col overflow-hidden bg-teal-400">
               {!sidebarOpen && (
                 <div className="min-[1300px]:hidden">
                   <div className="flex items-center justify-between border-b border-yellow-300 bg-transparent px-4 py-1.5">
-                 
-                
-                      <button
-                        type="button"
-                        className=" inline-flex h-4 w-4  items-center justify-center rounded-md text-white hover:text-teal-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-600"
-                        onClick={() => setSidebarOpen(true)}
+                    <button
+                      type="button"
+                      className=" inline-flex h-4 w-4  items-center justify-center rounded-md text-white hover:text-teal-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-600"
+                      onClick={() => setSidebarOpen(true)}
+                    >
+                      <span className="sr-only">Open sidebar</span>
+                      <svg
+                        viewBox="0 0 10 9"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke="troke-white"
+                        aria-hidden="true"
+                        class="w-.5 stroke-white"
                       >
-                        <span className="sr-only">Open sidebar</span>
-                        <svg
-                          viewBox="0 0 10 9"
-                          fill="none"
-                          stroke-linecap="round"
-                          stroke="troke-white"
-                          aria-hidden="true"
-                          class="w-.5 stroke-white"
-                        >
-                          <path d="M.5 1h9M.5 8h9M.5 4.5h9"></path>
-                        </svg>
-                      </button>
-                
+                        <path d="M.5 1h9M.5 8h9M.5 4.5h9"></path>
+                      </svg>
+                    </button>
                   </div>
                 </div>
-              )} 
-            </div>*/}
+              )}
+            </div>
           </div>
         </div>
       </header>
