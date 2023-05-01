@@ -107,7 +107,7 @@ export const EventsSpace = () => {
             >
               Performances
             </h2>
-            <div aria-hidden="true" class="select-none  text-teal-300 ">
+            <div aria-hidden="true" class="select-none text-teal-300">
               /
             </div>
             <h2

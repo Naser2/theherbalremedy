@@ -42,14 +42,13 @@ const navigation = [
   { name: 'Home', href: '/', icon: 'HomeIcon', current: false },
   { name: 'Teas', href: '/herbs', icon: 'HomeIcon', current: false },
   { name: 'Edibles', href: '/edibles', icon: 'CalendarIcon', current: false },
-
+  { name: 'Space', href: '/eventspace', icon: 'MapIcon', current: false },
   {
     name: 'Events',
     href: '/events',
     icon: 'MegaphoneIcon',
     current: false,
   },
-  { name: 'Space', href: '/eventspace', icon: 'MapIcon', current: false },
 ]
 const secondaryNavigation = [
   { name: 'About ', href: '/about', icon: 'SquaresPlusIcon' },

@@ -63,7 +63,7 @@ export default function About() {
         <div className="mx-auto flex max-w-2xl flex-col items-end justify-between gap-16 lg:mx-0 lg:max-w-none lg:flex-row">
           <div className="w-full lg:max-w-lg lg:flex-auto">
             <h2 className="text-3xl font-bold tracking-tight text-gray-600 sm:text-4xl">
-              "We’re looking forward to having you come by"
+              &quot;We’re looking forward to having you come by&quot;
             </h2>
             <p className="mt-6 text-2xl leading-8 text-gray-600">
               The Herbal Remedy team is a diverse group of young dynamic man who
