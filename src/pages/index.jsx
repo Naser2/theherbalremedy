@@ -137,7 +137,6 @@ export default function Home() {
                   href="https://goo.gl/maps/b3U2ZaYAmsH8qoDN6"
                   className="overflow-wrap  text-2xl font-medium text-slate-500 group-hover:text-gray-700"
                 >
-                  Address: 
                   <span className="overflow-wrap text-sky-400   hover:text-blue-600 hover:underline">
                     2154 2nd Ave, New York, NY 10029
                   </span>

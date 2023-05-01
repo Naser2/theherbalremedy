@@ -273,7 +273,7 @@ export const EdibleItems = ({ number }) => {
             </p>{' '}
             <Link
               href="/edibles"
-              className=" opacity-1 z-30 mt-1 flex max-h-[34px] w-full  items-center justify-center rounded-xl px-2.5 py-2 text-xl text-sm font-medium  text-teal-600 shadow-sm hover:bg-teal-600 hover:text-teal-100 focus:underline  focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-full sm:flex-grow-0 lg:max-h-[44px]"
+              className=" opacity-1 z-30 mt-1 flex max-h-[34px] w-full items-center  justify-center rounded-xl px-1.5 py-1 text-sm text-sm text-xl font-medium  text-teal-600 shadow-sm hover:bg-teal-600 hover:text-teal-100 focus:underline  focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-full sm:flex-grow-0 lg:max-h-[44px]"
             >
               View all
             </Link>
