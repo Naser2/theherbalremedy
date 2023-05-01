@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const Signature = ({ text }) => {
   return (
-    <div className="flex flex-shrink-0 border-t border-gray-200 p-4">
+    <div className="flex flex-shrink-0 border-t border-gray-200 px-4 pt-4">
       <Link
         href="https://goo.gl/maps/b3U2ZaYAmsH8qoDN6"
         className="group block flex-shrink-0"

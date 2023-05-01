@@ -409,7 +409,7 @@ export default function Navigation({ pageContent, featured }) {
                         <div className="flex flex-shrink-0 items-center bg-teal-400 px-4 py-2 text-white">
                           <span className="sm:text-lg">Menu</span>
                         </div>
-                        <nav aria-label="Sidebar" className="mt-1">
+                        <nav aria-label="Sidebar" className="mt-0">
                           <div className="space-y-1 px-2">
                             {navigation.map((item) => (
                               <Link
@@ -420,7 +420,7 @@ export default function Navigation({ pageContent, featured }) {
                                   item.current
                                     ? 'text-gray-900 lg:bg-gray-100'
                                     : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900',
-                                  'group flex items-center rounded-md px-2 py-2 text-base font-medium sm:py-4 sm:text-xl '
+                                  'group flex items-center rounded-md px-2 py-1.5 text-base font-medium sm:py-4 sm:text-xl md:py-2 '
                                 )}
                                 aria-current={item.current ? 'page' : undefined}
                               >
@@ -441,7 +441,7 @@ export default function Navigation({ pageContent, featured }) {
                             className="my-5 border-t border-gray-200"
                             aria-hidden="true"
                           />
-                          <div className="-mt-3 space-y-1 bg-gray-50 px-2">
+                          <div className="-mt-1 space-y-1 bg-gray-50 px-2">
                             {secondaryNavigation.map((item) => (
                               <a
                                 key={item.name}
@@ -460,7 +460,7 @@ export default function Navigation({ pageContent, featured }) {
                       </div>
                       <div className="nav-footer lg:-pt-[20rem] px-6 ">
                         <Signature />
-                        <div className="flex flex-shrink-0  border-gray-200 p-4">
+                        <div className="flex flex-shrink-0  border-gray-200 p-0">
                           <div className="flex-block flex items-center">
                             <div>
                               <Image
