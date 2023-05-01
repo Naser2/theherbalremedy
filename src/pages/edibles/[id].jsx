@@ -6,8 +6,8 @@ export default function fitness({ art }) {
   return (
     <>
       <Head>
-        <title>{`${art.name} - By Amit Kehar`}</title>
-        <meta name="description" content={art.description} />
+        <title> The Herbal</title>
+        <meta name="The herbal remedy Harlem" />
       </Head>
       <article
         id="project-page"
