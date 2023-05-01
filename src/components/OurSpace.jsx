@@ -94,8 +94,8 @@ export const EventsSpace = () => {
     <div className="bg-white">
       <section aria-labelledby="features-heading" className="relative">
         <div class="max-w-container mx-auto flex w-full max-w-2xl flex-col px-4  py-6  text-center text-center text-3xl sm:px-6 md:mx-auto md:py-14 lg:max-w-4xl lg:px-8 lg:text-6xl ">
-          <h1 class="mt-3   font-extrabold tracking-tight text-slate-900 ">
-            Events Details
+          <h1 class="mt-3   font-extrabold tracking-tight text-teal-500 ">
+            Availble Spaces
           </h1>
           <nav
             aria-label="Breadcrumbs"
@@ -107,7 +107,7 @@ export const EventsSpace = () => {
             >
               Performances
             </h2>
-            <div aria-hidden="true" class="select-none text-teal-300">
+            <div aria-hidden="true" class="select-none text-teal-100">
               /
             </div>
             <h2
@@ -116,7 +116,7 @@ export const EventsSpace = () => {
             >
               Birthdays
             </h2>
-            <div aria-hidden="true" class="select-none  text-teal-300 ">
+            <div aria-hidden="true" class="select-none  text-teal-100 ">
               /
             </div>
             <h2
@@ -125,7 +125,7 @@ export const EventsSpace = () => {
             >
               Talks
             </h2>
-            <div aria-hidden="true" class="select-none  text-teal-300 ">
+            <div aria-hidden="true" class="select-none  text-teal-100 ">
               /
             </div>
             <h2
@@ -152,15 +152,15 @@ export const EventsSpace = () => {
         </div>
 
         <div className="mx-auto max-w-2xl px-4 pb-24 pt-1 sm:px-6 sm:pb-32 lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:pt-4">
-          <div className="lg:col-start-2 lg:mt-14 ">
+          <div className="mt-6 lg:col-start-2 lg:mt-14 ">
             <h2
               id="features-heading"
-              className="text-lg font-medium text-teal-600 xl:text-xl"
+              className="text-lg font-medium text-slate-600 xl:text-xl"
             >
               How to rent or use our space
             </h2>
-            <p className="mt-4 text-4xl font-bold tracking-tight text-gray-900 xl:text-5xl">
-              Events | Space Details
+            <p className=" text-4xl font-bold tracking-tight text-slate-500 xl:text-5xl">
+              Booking Details
             </p>
             <p className="mt-4 text-xl text-gray-500 xl:text-2xl">
               We&apos;re haveing multiple events at Herbal Remedy Location. If
@@ -171,7 +171,7 @@ export const EventsSpace = () => {
             <dl className="mt-10 grid grid-cols-1 gap-x-8 gap-y-10 text-sm sm:grid-cols-2">
               {features.map((feature) => (
                 <div key={feature.name}>
-                  <dt className="text-xl font-semibold  text-teal-600 text-gray-900 xl:text-2xl">
+                  <dt className=".text-slate-600 text-xl  font-semibold text-slate-500 xl:text-2xl">
                     {feature.name}
                   </dt>
                   <dd className="mt-2 text-lg font-medium  text-gray-500 xl:text-xl">

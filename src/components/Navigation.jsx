@@ -344,15 +344,15 @@ export default function Navigation({ pageContent, featured }) {
         <body class="h-full overflow-hidden">
         ```
       */}
-      <header className="relative z-50 z-50 mx-4 mt-0 mt-[14px]  mr-2 flex transform flex-col bg-transparent pt-0 pb-0 max-[100px]:px-12 min-[1400px]:mx-36">
+      <header className="relative z-50 z-50 mx-4 mt-0 mt-[14px] mr-2  flex transform flex-col  bg-transparent pt-0 pb-0 max-[100px]:px-12 min-[1400px]:mx-36">
         <div
           id="nav-grid"
-          className="relative grid grid-cols-[1fr,auto] items-center bg-transparent"
+          className="relative grid grid-cols-[1fr,auto] items-center "
         >
           <div id="logo" className="flex min-w-0">
             <Logo />
           </div>
-          <div className="top-0 z-50 z-50 ml-6 flex flex transform  flex-col items-center bg-transparent pt-0 pb-0 ">
+          <div className="top-0 z-50 z-50 ml-6 flex flex transform  flex-col items-center pt-0 pb-0 ">
             <Transition.Root show={sidebarOpen} as={Fragment}>
               <Dialog
                 as="div"
@@ -391,7 +391,7 @@ export default function Navigation({ pageContent, featured }) {
                         leaveFrom="opacity-100"
                         leaveTo="opacity-0"
                       >
-                        <div className="absolute top-0 right-0">
+                        <div className="absolute top-0 right-0 hidden">
                           <button
                             type="button"
                             className="z-50 flex h-10 w-10 items-center justify-center rounded-full bg-teal-400  shadow-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500  "
@@ -405,17 +405,20 @@ export default function Navigation({ pageContent, featured }) {
                           </button>
                         </div>
                       </Transition.Child>
-                      <div className="h-0 flex-1 overflow-y-auto pt-0 pb-4">
+                      <div className="light-green h-0 flex-1 overflow-y-auto pt-0 pb-4 ">
                         {/* <div className="flex flex-shrink-0 items-center bg-teal-400 px-4 py-2 text-white items-center"> */}
                         <Link
                           href="/"
-                          className="flex bg-teal-400  px-6 py-2 text-white sm:text-lg"
+                          className="flex bg-teal-400 px-6  py-2 text-lg font-bold text-white sm:text-lg"
                           onClick={() => setSidebarOpen(false)}
                         >
                           Home
                         </Link>
                         {/* </div> */}
-                        <nav aria-label="Sidebar" className="mt-0">
+                        <nav
+                          aria-label="Sidebar"
+                          className="bg-teal-100/50 py-2"
+                        >
                           <div className="space-y-1 px-2">
                             {navigation.map((item) => (
                               <Link
@@ -424,16 +427,16 @@ export default function Navigation({ pageContent, featured }) {
                                 href={item.href}
                                 className={classNames(
                                   item.current
-                                    ? 'text-gray-900 lg:bg-gray-100'
+                                    ? 'text-gray-900'
                                     : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900',
-                                  'group flex items-center rounded-md px-2 py-1.5 text-base font-medium sm:py-4 sm:text-xl md:py-2 '
+                                  'group flex items-center rounded-md px-2 py-1.5 text-base text-lg  font-bold text-slate-700 hover:bg-teal-100 sm:py-4 sm:text-xl md:py-2 '
                                 )}
                                 aria-current={item.current ? 'page' : undefined}
                               >
                                 <item.icon
                                   className={classNames(
                                     item.current
-                                      ? 'text-gray-500'
+                                      ? 'bg-teal-100 text-gray-500'
                                       : 'text-gray-400 group-hover:text-gray-500',
                                     'mr-4 h-6 w-6 text-gray-600'
                                   )}
@@ -447,7 +450,7 @@ export default function Navigation({ pageContent, featured }) {
                             className="my-5 border-t border-gray-200"
                             aria-hidden="true"
                           />
-                          <div className="-mt-4 space-y-1 bg-gray-50 px-2 ">
+                          <div className="space-y-100 -mt-4 bg-teal-100/50  px-2 ">
                             {secondaryNavigation.map((item) => (
                               <a
                                 key={item.name}
@@ -464,11 +467,11 @@ export default function Navigation({ pageContent, featured }) {
                           </div>
                         </nav>
                       </div>
-                      <div className="nav-footer lg:-pt-[20rem] px-6 ">
+                      <div className="nav-footer lg:-pt-[20rem] mt-6  px-6">
                         <Signature />
                         <div className="flex flex-shrink-0  border-gray-200 p-0">
                           <div className="flex-block flex items-center">
-                            <div>
+                            <div className="max-h-[16rem]">
                               <Image
                                 src={theHerbalImage.src}
                                 className="relative h-full w-full "
@@ -491,16 +494,15 @@ export default function Navigation({ pageContent, featured }) {
             </Transition.Root>
             {/* Static sidebar for desktop */}
             <DesktopNavigation tabs={tabs} />
-            <div className="flex min-w-0 flex-1 flex-col overflow-hidden bg-teal-400">
+            <div className="flex min-w-0 flex-1 flex-col overflow-hidden rounded-full border border-teal-600/60 bg-teal-400 shadow-lg ">
               {!sidebarOpen && (
                 <div className="min-[1300px]:hidden">
-                  <div className="flex items-center justify-between border-b border-yellow-300 bg-transparent px-4 py-1.5">
+                  <div className="flex items-center justify-between  bg-transparent p-3 ">
                     <button
                       type="button"
                       className=" inline-flex h-4 w-4 items-center justify-center rounded-md text-white text-white hover:text-teal-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-600"
                       onClick={() => setSidebarOpen(true)}
                     >
-                      <span className="sr-only">Open sidebar</span>
                       <svg
                         viewBox="0 0 10 9"
                         fill="none"

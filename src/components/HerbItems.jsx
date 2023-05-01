@@ -22,14 +22,16 @@ const HerbItems = ({ number }) => {
   const router = useRouter()
   return (
     <div className="">
-      <Image
-        src={teasBg.src}
-        alt="landing-hero-background"
-        width="1658"
-        height="1660"
-        className="inset-0 -z-10  -mt-14 aspect-[418/252] h-[484px] h-[284px] w-full overflow-hidden object-cover object-center lg:-mt-24"
-      />
-      <div className="z-30 mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:pb-32 sm:pt-24 lg:px-8">
+      {router.pathname !== '/' && (
+        <Image
+          src={teasBg.src}
+          alt="landing-hero-background"
+          width="1658"
+          height="1660"
+          className="inset-0 -z-10  -mt-14 aspect-[418/252] h-[484px] h-[284px] w-full overflow-hidden object-cover object-center lg:-mt-24"
+        />
+      )}
+      <div className="z-30 mx-auto max-w-7xl px-4 pt-6   sm:px-6 sm:pb-32 sm:pt-24 lg:py-16 lg:px-8">
         <div className="flex justify-center rounded-md bg-white px-4 px-2 lg:py-4">
           <h1 className="text-center text-3xl font-bold tracking-tight  text-teal-500 lg:text-5xl">
             Teas
@@ -41,9 +43,9 @@ const HerbItems = ({ number }) => {
         )} */}
         </div>
 
-        <div className="mt-12 space-y-16 sm:mt-16 ">
+        <div className="space-y-16 pt-6 sm:mt-16 lg:mt-12 ">
           <section>
-            <div className="border-gray-20 -mb-6 mt-6 flow-root divide-y divide-gray-200 border-t md:grid md:grid-cols-2 ">
+            <div className="border-gray-20 -mb-6 mt-0 flow-root divide-y divide-gray-200 border-t md:grid md:grid-cols-2 ">
               {herbals.slice(0, number).map((product) => (
                 <div key={product.id} className="py-6 sm:flex">
                   <div className="flex space-x-4 sm:min-w-0 sm:flex-1 sm:space-x-6 lg:space-x-8">

@@ -18,6 +18,8 @@
   /* color: #f1f1f1; */
   --youtube-background-color: #212121;
   -webkit-text-size-adjust: 100%;
+  /* --main-light-green: rgb(217, 232, 224); */
+  --main-light-green: rgb(204 247 224 / 40%);
 }
 @media (max-width: 768px) {
   .text-image-section--flex-container-centered {
@@ -836,4 +838,8 @@ home-section__payment-frequency--sub {
   background-position: bottom right, bottom left;
   background-size: 70%;
   padding: 40px 40px 20px;
+}
+
+.light-green {
+  background-color: var(--main-light-green);
 }

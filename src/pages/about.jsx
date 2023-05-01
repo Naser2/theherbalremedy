@@ -57,7 +57,7 @@ export default function About() {
         </h2>
       </div>
       <div className="mx-auto max-w-7xl px-6 sm:mt-20 lg:mt-[50rem]  lg:px-8 xl:px-14">
-        <h2 className="py-14 text-center text-3xl font-bold tracking-tight text-black  sm:text-5xl">
+        <h2 className="py-14 text-center text-3xl font-bold tracking-tight text-teal-500 sm:text-5xl">
           Team Herbal Remedy
         </h2>
         <div className="mx-auto flex max-w-2xl flex-col items-end justify-between gap-16 lg:mx-0 lg:max-w-none lg:flex-row">
@@ -137,16 +137,16 @@ export default function About() {
                 src={person.imageUrl}
                 alt=""
               />
-              <h3 className="mt-6 text-lg font-semibold  leading-8 tracking-tight text-slate-700 lg:text-xl">
+              <h3 className="mt-6 text-lg font-bold  leading-8 tracking-tight text-slate-700 lg:text-xl">
                 {person.name}
               </h3>
               <p className="text-base leading-7 text-gray-500 lg:text-xl">
                 {person.passion}
               </p>
-              <p className="text-base leading-7 text-gray-700 lg:-mt-2 lg:text-xl xl:-mt-3">
+              <p className="-mt-4 text-base font-bold leading-7 text-gray-500 lg:text-xl xl:-mt-3">
                 {person.role}
               </p>
-              <p className="text-sm leading-6 text-gray-600 lg:-mt-2 lg:text-xl xl:-mt-4">
+              <p className="-mt-4 text-sm leading-6 text-gray-600 lg:text-xl xl:-mt-4">
                 {person.location}
               </p>
             </li>
