@@ -1,14 +1,6 @@
 import { useMemo } from 'react'
 import Head from 'next/head'
 
-import { getArt } from '@/lib/getArt'
-
-import { getAllArts } from '@/lib/getAllArts'
-// import { GoBackArrow } from '@/components/Goback'
-import { ProjectLayout } from '@/components/ProjectLayout'
-// import { Header } from '@/components/Header'
-const languages = ['en', 'fr', 'hn']
-
 export default function fitness({ art }) {
   console.log('Art in ART CLIENT', art)
   return (
@@ -23,34 +15,34 @@ export default function fitness({ art }) {
       >
         {/* <GoBackArrow /> */}
 
-        <ProjectLayout project={art} />
+        {/* <ProjectLayout project={art} /> */}
       </article>
     </>
   )
 }
 
-export async function getStaticProps({ params }) {
-  console.log('PARAMS-IN-[ART]', params.artId)
+// export async function getStaticProps({ params }) {
+//   console.log('PARAMS-IN-[ART]', params.artId)
 
-  let item = await getArt(params.artId)
+//   let item = await getArt(params.artId)
 
-  return {
-    props: {
-      art: await getArt(params.artId),
-    },
-    revalidate: 10,
-  }
-}
+//   return {
+//     props: {
+//       art: await getArt(params.artId),
+//     },
+//     revalidate: 10,
+//   }
+// }
 
-export async function getStaticPaths() {
-  let items = await getAllArts()
+// export async function getStaticPaths() {
+//   let items = await getAllArts()
 
-  return {
-    paths: items.map(({ id }) => ({
-      params: {
-        artId: id.toString(),
-      },
-    })),
-    fallback: 'blocking',
-  }
-}
+//   return {
+//     paths: items.map(({ id }) => ({
+//       params: {
+//         artId: id.toString(),
+//       },
+//     })),
+//     fallback: 'blocking',
+//   }
+// }
