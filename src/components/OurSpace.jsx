@@ -80,7 +80,7 @@ const features = [
   {
     name: 'Catering',
     description:
-      "he comfortable Herbal Remedy space also offer catering if you rent our space and includes a flat fees based on number of guesses. Also auto 'Herbal Signature Fruit Punch' refills throughout the venet.",
+      "The comfortable Herbal Remedy space also offers catering if you rent our space and includes a flat fees based on number of guesses. Also auto 'Herbal Signature Fruit Punch' refills throughout the venet.",
   },
   {
     name: 'Inhouse Food only',
