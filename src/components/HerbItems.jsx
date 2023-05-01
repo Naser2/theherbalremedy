@@ -111,8 +111,7 @@ const herbals = [
       size: '3" x 3" x 3"',
 
       imageSrc: herbalItem1,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+      imageAlt: 'Edible Item1.',
     },
     // More item...
   },
@@ -130,8 +129,7 @@ const herbals = [
       color: '20¢ / cup',
       size: '3" x 3" x 3"',
       imageSrc: herbalItem9,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+      imageAlt: 'Edible Item1.',
     },
     // More products...
   },
@@ -148,8 +146,7 @@ const herbals = [
       color: '23¢ / cup',
       size: '3" x 3" x 3"',
       imageSrc: herbalItem10,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+      imageAlt: 'Edible Item1.',
     },
     // More products...
   },
@@ -167,8 +164,7 @@ const herbals = [
       color: '21¢ / cup',
       size: '3" x 3" x 3"',
       imageSrc: herbalItem,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+      imageAlt: 'Edible Item1.',
 
       // More item...
     },
@@ -187,8 +183,7 @@ const herbals = [
       color: '25¢ / cup',
       size: '3" x 3" x 3"',
       imageSrc: herbalItem3,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+      imageAlt: 'Edible Item1.',
     },
     // More item...
   },
@@ -205,8 +200,7 @@ const herbals = [
       color: '26¢ / cup',
       size: '3" x 3" x 3"',
       imageSrc: herbalItem4,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+      imageAlt: 'Edible Item1.',
     },
     // More item...
   },
@@ -223,8 +217,7 @@ const herbals = [
       color: '23¢ / cup',
       size: '3" x 3" x 3"',
       imageSrc: herbalItem11,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+      imageAlt: 'Edible Item1.',
     },
     // More products...
   },
@@ -241,8 +234,7 @@ const herbals = [
       color: '28¢ / cup',
       size: '3" x 3" x 3"',
       imageSrc: herbalItem6,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+      imageAlt: 'Edible Item1.',
     },
     // More products...
   },
@@ -259,8 +251,7 @@ const herbals = [
       color: '20¢ / cup',
       size: '3" x 3" x 3"',
       imageSrc: herbalItem2,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+      imageAlt: 'Edible Item1.',
     },
     // More item...
   },
@@ -277,8 +268,7 @@ const herbals = [
       color: '20¢ / cup',
       size: '3" x 3" x 3"',
       imageSrc: herbalItem7,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+      imageAlt: 'Edible Item1.',
     },
     // More products...
   },
@@ -295,8 +285,7 @@ const herbals = [
       color: '20¢ / cup',
       size: '3" x 3" x 3"',
       imageSrc: herbalItem7,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+      imageAlt: 'Edible Item1.',
     },
     // More products...
   },
@@ -313,8 +302,7 @@ const herbals = [
       color: '20¢ / cup',
       size: '3" x 3" x 3"',
       imageSrc: herbalItem8,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+      imageAlt: 'Edible Item1.',
     },
     // More products...
   },
@@ -332,8 +320,7 @@ const herbals = [
       color: '15¢ / cup',
       size: '3" x 3" x 3"',
       imageSrc: herbalItem10,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+      imageAlt: 'Edible Item1.',
     },
     // More products...
   },
@@ -350,8 +337,7 @@ const herbals = [
       color: '15¢ / cup',
       size: '3" x 3" x 3"',
       imageSrc: herbalItem11,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+      imageAlt: 'Edible Item1.',
     },
 
     // More products...
@@ -370,7 +356,7 @@ const herbals = [
   //       size: '3" x 3" x 3"',
   //       imageSrc: herbalItem12,
   //       imageAlt:
-  //         'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+  //         'Edible Item1.',
   //     },
   //     // More products...
   //   },

@@ -58,7 +58,7 @@ export const EdibleItems = ({ number }) => {
           )}
         </div>
 
-        <div className="space-y-16 pt-6  sm:mt-16 lg:mt-12 ">
+        <div className="space-y-16 pt-6 sm:mt-16 lg:mt-12 ">
           {/* <Image
           src={teasBg.src}
           alt="landing-hero-background"
@@ -132,11 +132,10 @@ const edibles = [
       name: 'Pina Coloda Muchkinz',
       href: '#',
       price: '$11.00',
-      color: 'Brass',
+      color: 'Edible',
       size: '3" x 3" x 3"',
       imageSrc: storeItem,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+      imageAlt: 'Edible Item1.',
 
       // More item...
     },
@@ -151,12 +150,11 @@ const edibles = [
       name: 'James Brown Funky Chai',
       href: '#',
       price: '$12.00',
-      color: 'Brass',
+      color: 'Edible',
       size: '3" x 3" x 3"',
 
       imageSrc: storeItem1,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+      imageAlt: 'Edible Item1.',
     },
     // More item...
   },
@@ -170,11 +168,10 @@ const edibles = [
       name: 'yuletide toddy',
       href: '#',
       price: '$12.00',
-      color: 'Brass',
+      color: 'Edible',
       size: '3" x 3" x 3"',
       imageSrc: storeItem2,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+      imageAlt: 'Edible Item1.',
     },
     // More item...
   },
@@ -188,11 +185,10 @@ const edibles = [
       name: 'Yuletide toddy',
       href: '#',
       price: '$12.00',
-      color: 'Brass',
+      color: 'Edible',
       size: '3" x 3" x 3"',
       imageSrc: storeItem3,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+      imageAlt: 'Edible Item1.',
     },
     // More item...
   },
@@ -206,11 +202,10 @@ const edibles = [
       name: 'Sour Apple',
       href: '#',
       price: '$12.00',
-      color: 'Brass',
+      color: 'Edible',
       size: '3" x 3" x 3"',
       imageSrc: storeItem4,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+      imageAlt: 'Edible Item1.',
     },
     // More item...
   },
@@ -224,11 +219,10 @@ const edibles = [
       name: 'ChiroChico Realm',
       href: '#',
       price: '$17.00',
-      color: 'Brass',
+      color: 'Edible',
       size: '3" x 3" x 3"',
       imageSrc: storeItem5,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+      imageAlt: 'Edible Item1.',
     },
     // More products...
   },
@@ -242,11 +236,10 @@ const edibles = [
       name: 'Hit me again',
       href: '#',
       price: '$17.00',
-      color: 'Brass',
+      color: 'Edible',
       size: '3" x 3" x 3"',
       imageSrc: storeItem6,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+      imageAlt: 'Edible Item1.',
     },
     // More products...
   },
@@ -260,11 +253,10 @@ const edibles = [
       name: 'Dewy Chewy',
       href: '#',
       price: '$17.00',
-      color: 'Brass',
+      color: 'Edible',
       size: '3" x 3" x 3"',
       imageSrc: storeItem7,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+      imageAlt: 'Edible Item1.',
     },
     // More products...
   },
@@ -278,11 +270,10 @@ const edibles = [
       name: 'Lemon Grass paper',
       href: '#',
       price: '$17.00',
-      color: 'Brass',
+      color: 'Edible',
       size: '3" x 3" x 3"',
       imageSrc: storeItem8,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+      imageAlt: 'Edible Item1.',
     },
     // More products...
   },
@@ -296,11 +287,10 @@ const edibles = [
       name: 'Berry Blues ',
       href: '#',
       price: '$17.00',
-      color: 'Brass',
+      color: 'Edible',
       size: '3" x 3" x 3"',
       imageSrc: storeItem9,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+      imageAlt: 'Edible Item1.',
     },
     // More products...
   },
@@ -314,11 +304,10 @@ const edibles = [
       name: 'red Macaroons Divine',
       href: '#',
       price: '$17.00',
-      color: 'Brass',
+      color: 'Edible',
       size: '3" x 3" x 3"',
       imageSrc: storeItem10,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+      imageAlt: 'Edible Item1.',
     },
     // More products...
   },
@@ -332,11 +321,10 @@ const edibles = [
       name: 'Cha Cha Cha',
       href: '#',
       price: '$17.00',
-      color: 'Brass',
+      color: 'Edible',
       size: '3" x 3" x 3"',
       imageSrc: storeItem11,
-      imageAlt:
-        'Brass puzzle in the shape of a jack with overlapping rounded posts.',
+      imageAlt: 'Edible Item1.',
     },
     // More products...
   },

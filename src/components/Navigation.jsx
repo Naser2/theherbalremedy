@@ -468,7 +468,7 @@ export default function Navigation({ pageContent, featured }) {
                         </nav>
                       </div>
                       <div className="nav-footer lg:-pt-[20rem] mt-6  px-6">
-                        <Signature />
+                        {/* <Signature /> */}
                         <div className="flex flex-shrink-0  border-gray-200 p-0">
                           <div className="flex-block flex items-center">
                             <div className="max-h-[16rem]">
