@@ -118,7 +118,7 @@ export default function Home() {
           <div className="lg:max-w-8xl mx-auto max-w-5xl px-4 py-4 sm:px-6 sm:py-14 lg:px-8">
             <div className="grid-cols-2 lg:space-x-14 xl:grid ">
               <div className="border-b border-gray-200 pb-10 text-center ">
-                <p className="mt-2 text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl lg:text-7xl ">
+                <p className="mt-2 text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl lg:text-5xl ">
                   Contact Us
                 </p>
 
@@ -131,7 +131,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="border-b border-gray-200 pb-10 text-center ">
-                <p className="mt-2 text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl lg:text-7xl ">
+                <p className="mt-2 text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl lg:text-5xl ">
                   Location
                 </p>
                 <Link
@@ -149,7 +149,7 @@ export default function Home() {
                 href="https://goo.gl/maps/TXRgJi1oApViqcZBA"
                 className="border-b border-gray-200 pb-10 text-center "
               >
-                <p className="mt-2 text-center text-3xl font-bold tracking-tight hover:text-blue-500 sm:text-4xl lg:text-5xl lg:text-7xl ">
+                <p className="mt-2 text-center text-3xl font-bold tracking-tight hover:text-blue-500 sm:text-4xl lg:text-5xl lg:text-5xl ">
                   Get direction
                 </p>
                 <img
@@ -159,7 +159,7 @@ export default function Home() {
                 ></img>
               </Link>
               <div className="border-b border-gray-200 pb-10 text-center ">
-                <p className="mt-2 text-center text-3xl font-bold tracking-tight  text-gray-900 sm:text-4xl lg:text-5xl lg:text-7xl ">
+                <p className="mt-2 text-center text-3xl font-bold tracking-tight  text-gray-900 sm:text-4xl lg:text-5xl lg:text-5xl ">
                   Hours
                 </p>
                 {storeHours.map((data) => {
