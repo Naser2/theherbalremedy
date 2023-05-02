@@ -23,7 +23,7 @@ const people = [
   // More people...
 ]
 
-export default function Art({ reiki, featured }) {
+export default function Edibles({ reiki, featured }) {
   const grid = 'grid-clols-1 grid md:grid-cols-2'
   const shadow =
     'md:shadow-zinc-400/5 md:backdrop-blur hover:shadow-zinc-200/5 max-h-24'

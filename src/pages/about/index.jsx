@@ -15,7 +15,7 @@ import {
 } from '@/components/SocialIcons'
 import portraitImage from '@/images/portrait.jpg'
 import { SocialMedia } from '@/components/SocialMedia'
-import Contact from './contact'
+import Contact from '../contact'
 import { Address } from '@/components/Signature'
 
 function SocialLink({ className, href, children, icon: Icon }) {
