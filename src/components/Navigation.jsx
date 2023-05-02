@@ -991,7 +991,7 @@ export default function Navigation({ pageContent, featured }) {
                         </div>
                       </Transition.Child>
                       <div className="light-green h-0 flex-1 overflow-y-auto pt-0 pb-4">
-                        <div className="flex flex-shrink-0 items-center bg-teal-400 px-4 py-2 text-white">
+                        <div className="flex flex-shrink-0 items-center bg-teal-400 px-4 py-2 font-bold text-white">
                           <Link href="/" className="sm:text-lg">
                             Home
                           </Link>
@@ -1046,7 +1046,7 @@ export default function Navigation({ pageContent, featured }) {
                         </nav>
                       </div>
                       <div className="nav-footer lg:-pt-[20rem] px-6 ">
-                        <Signature />
+                        {/* <Signature /> */}
                         <div className="flex flex-shrink-0  border-gray-200 p-0">
                           <div className="flex-block flex items-center">
                             <div>
