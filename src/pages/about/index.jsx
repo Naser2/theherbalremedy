@@ -45,7 +45,7 @@ function MailIcon(props) {
 
 export default function About() {
   return (
-    <div className="-mt-14 lg:-mt-40 lg:-mt-[10rem]">
+    <div className="-mt-20 lg:-mt-40 lg:-mt-[10rem]">
       <img
         src={TheHerbalTeam.src}
         alt="event-space-2.jpeg"

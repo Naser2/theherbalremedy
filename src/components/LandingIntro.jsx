@@ -18,7 +18,7 @@ export default function LandingIntro() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div id="intro" className=" relative  -mt-14 lg:-mt-24 ">
+    <div id="intro" className=" relative  -mt-20 lg:-mt-24 ">
       <div className="rounded-md bg-gray-900">
         <header className="absolute inset-x-0  top-0 z-50 rounded-md ">
           <span className="sr-only">The herbal Remedy Tea shop </span>
@@ -38,7 +38,7 @@ export default function LandingIntro() {
             alt="landing-hero-background"
             width="1658"
             height="1660"
-            className="absolute inset-0 -z-10 aspect-[818/452]  h-[284px] w-full object-cover object-center md:h-full"
+            className="absolute inset-0 -z-10  aspect-[818/452]  h-[284px] w-full object-cover object-center md:h-full"
           />
 
           <div className="mx-auto max-w-2xl py-32 sm:py-48  lg:py-56">

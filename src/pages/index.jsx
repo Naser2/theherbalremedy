@@ -100,7 +100,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="">
+      <div className="lg:-mt-14">
         <Features />
         <HerbItems number={4} />
         <img

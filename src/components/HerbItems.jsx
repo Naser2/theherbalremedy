@@ -14,6 +14,7 @@ import herbalItem8 from '@/images/store/herb8.webp'
 import herbalItem9 from '@/images/store/herb9.webp'
 import herbalItem10 from '@/images/store/herb10.webp'
 import herbalItem11 from '@/images/store/herb11.webp'
+import tumericBliss from '@/images/store/turmeric_bliss.jpeg'
 import teasBg from '@/images/herbal-remedies-shutterstock.jpeg'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -28,12 +29,12 @@ const HerbItems = ({ number }) => {
           alt="landing-hero-background"
           width="1658"
           height="1660"
-          className="inset-0 -z-10  -mt-14 aspect-[418/252] h-[484px] h-[284px] w-full overflow-hidden object-cover object-center lg:-mt-24"
+          className="inset-0 -z-10 -mt-16 aspect-[418/252] h-[484px] h-[284px] w-full overflow-hidden object-cover object-center lg:-mt-24"
         />
       )}
       <div className="z-30 mx-auto max-w-7xl px-4 pt-6   sm:px-6 sm:pb-32 sm:pt-24 lg:py-16 lg:px-8">
         <div className="flex justify-center rounded-md bg-white px-4 px-2 lg:py-4">
-          <h1 className="text-center text-3xl font-bold tracking-tight  text-teal-500 lg:text-5xl">
+          <h1 className="text-center text-3xl  text-teal-500 lg:text-5xl">
             Teas
           </h1>
           {/* {router.pathname == '/herbs' && (
@@ -104,6 +105,24 @@ const herbals = [
     invoiceHref: '#',
     item: {
       id: 1,
+      name: 'Tumeric Bliss ',
+      href: '#',
+      price: '$16.00',
+      color: '21¢ / cup',
+      size: '3" x 3" x 3"',
+      imageSrc: tumericBliss,
+      imageAlt: 'Edible Item1.',
+
+      // More item...
+    },
+  },
+  {
+    number: '4376',
+    status: 'Delivered on January 22, 2021',
+    href: '#',
+    invoiceHref: '#',
+    item: {
+      id: 1,
       name: 'Yuletide toddy herbal',
       href: '#',
       price: '$12.00',
@@ -133,6 +152,7 @@ const herbals = [
     },
     // More products...
   },
+
   {
     number: '4376',
     status: 'Delivered on January 22, 2021',
@@ -221,6 +241,7 @@ const herbals = [
     },
     // More products...
   },
+
   {
     number: '4376',
     status: 'Delivered on January 22, 2021',

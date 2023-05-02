@@ -29,22 +29,22 @@ export const EdibleItems = ({ number }) => {
           alt="landing-hero-background"
           width="1658"
           height="1660"
-          className="inset-0 -z-10  -mt-14 aspect-[418/252] h-[484px] h-[284px] w-full overflow-hidden object-cover object-center lg:-mt-24"
+          className="inset-0 -z-10  -mt-16 aspect-[418/252] h-[484px] h-[284px] w-full overflow-hidden object-cover object-center lg:-mt-24"
         />
       )}
 
-      <div className="z-30 mx-auto max-w-7xl px-4  py-6  sm:px-6 sm:pb-32 sm:pt-24 lg:py-16 lg:px-8">
-        <div className="max-w-xl">
-          <h1 className="text-center text-3xl font-bold tracking-tight  text-teal-500 lg:text-5xl">
+      <div className="z-30 mx-auto max-w-7xl items-center justify-center px-4 py-6  sm:px-6 sm:pb-32 sm:pt-24 lg:py-16 lg:px-8">
+        <div className="items-center justify-center">
+          <h1 className="text-center text-3xl  text-teal-500 lg:text-5xl">
             Edibles
           </h1>
-          {router.pathname == '/' && (
-            <h2 class="font-medium text-gray-500 lg:text-2xl">
-              Heerbal based edibles{' '}
+          {/* {router.pathname == '/' && (
+            <h2 class="text-center font-medium text-gray-500 lg:text-2xl">
+              Herbal based edibles{' '}
             </h2>
-          )}
+          )} */}
           {router.pathname == '/herbs' && (
-            <h2 class="font-medium text-gray-500">
+            <h2 class="text-center font-medium text-gray-500">
               All herbal based edibles{' '}
               {router.pathname == '/' && (
                 <Link

@@ -992,7 +992,11 @@ export default function Navigation({ pageContent, featured }) {
                       </Transition.Child>
                       <div className="light-green h-0 flex-1 overflow-y-auto pt-0 pb-4">
                         <div className="flex flex-shrink-0 items-center bg-teal-400 px-4 py-2 font-bold text-white">
-                          <Link href="/" className="sm:text-lg">
+                          <Link
+                            href="/"
+                            className="sm:text-lg"
+                            onClick={() => setSidebarOpen(false)}
+                          >
                             Home
                           </Link>
                         </div>
@@ -1072,28 +1076,24 @@ export default function Navigation({ pageContent, featured }) {
             </Transition.Root>
             {/* Static sidebar for desktop */}
             <DesktopNavigation tabs={tabs} />
-            <div className="flex min-w-0 flex-1 flex-col overflow-hidden rounded-full border border-teal-600/60 bg-teal-400 shadow-lg ">
+            <div className="min-w-0 flex-col overflow-hidden rounded-full border border-teal-600/60 bg-teal-400 text-white shadow-lg ">
               {!sidebarOpen && (
-                <div className="min-[1300px]:hidden">
-                  <div className="flex items-center justify-between  bg-transparent p-3 ">
-                    <button
-                      type="button"
-                      className=" inline-flex h-4 w-4 items-center justify-center rounded-md text-white text-white hover:text-teal-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-600"
-                      onClick={() => setSidebarOpen(true)}
-                    >
-                      <svg
-                        viewBox="0 0 10 9"
-                        fill="none"
-                        stroke-linecap="round"
-                        stroke="stroke-white"
-                        aria-hidden="true"
-                        class="w-.5 stroke-white"
-                      >
-                        <path d="M.5 1h9M.5 8h9M.5 4.5h9"></path>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
+                <button
+                  type="button"
+                  className="inline-flex h-[3.04rem] w-12 items-center justify-center rounded-md px-4 py-3 text-white  hover:text-teal-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-600 min-[1300px]:hidden"
+                  onClick={() => setSidebarOpen(true)}
+                >
+                  <svg
+                    viewBox="0 0 10 9"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke="stroke-white"
+                    aria-hidden="true"
+                    className="w-10 stroke-white text-white"
+                  >
+                    <path d="M.5 1h9M.5 8h9M.5 4.5h9"></path>
+                  </svg>
+                </button>
               )}
             </div>
           </div>

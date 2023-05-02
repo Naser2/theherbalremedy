@@ -24,7 +24,7 @@ const features = [
 export default function Features() {
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-2xl px-4 pt-8  pb-24 sm:px-6 sm:py-8 lg:max-w-7xl lg:px-8">
+      <div className="mx-auto max-w-2xl px-4 pt-8  pb-6 sm:px-6 sm:py-8 lg:max-w-7xl lg:px-8">
         <div className="grid grid-cols-1 items-center gap-x-8 gap-y-10 lg:grid-cols-2 lg:gap-y-16">
           <div>
             <div className="border-b border-gray-200 lg:pb-10">
